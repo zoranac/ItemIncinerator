@@ -1,0 +1,11 @@
+name: ItemIncinerator
+version: ${project.version}
+main: io.github.zoranac.itemincinerator.ItemIncinerator
+api-version: 1.13
+commands:
+  incinerate:
+    description: Destroy items on the ground [distance] blocks away from you.
+    usage: /<command> [distance]
+permissions:
+  command.incinerate:
+    description: Allows players to destroy items on the ground [distance] blocks away from you.
