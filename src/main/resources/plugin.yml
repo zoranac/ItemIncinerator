@@ -5,7 +5,7 @@ api-version: 1.13
 commands:
   incinerate:
     description: Destroy items on the ground [distance] blocks away from you.
-    usage: /<command> [distance]
+    usage: /<command> [distance] [item name]
 permissions:
   command.incinerate:
     description: Allows players to destroy items on the ground [distance] blocks away from you.

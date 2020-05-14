@@ -41,10 +41,9 @@ public final class ItemIncinerator extends JavaPlugin {
                     if (Double.valueOf(args[0]) == Math.floor(Double.valueOf(args[0])) && !Double.isInfinite(Double.valueOf(args[0]))) {
                         distInt = Integer.valueOf(args[0]);
                     }
-
                 }
                 else {
-                    sender.sendMessage("/incinerate [distance] [item name]");
+                    //sender.sendMessage("/incinerate [distance] [item name]");
                     return false;
                 }
                 List<String> ArgsList = Arrays.asList(Arrays.copyOfRange(args, 1, args.length));
@@ -80,8 +79,11 @@ public final class ItemIncinerator extends JavaPlugin {
                             " items on the ground within " + distString + " blocks of you.");
                 }
             }
-
+            else {
+                sender.sendMessage(ChatColor.RED + "You don't have permission to use that command.");
+            }
             return true;
+
         }
         catch (Exception e)
         {
@@ -90,7 +92,7 @@ public final class ItemIncinerator extends JavaPlugin {
             }
             else
             {
-                sender.sendMessage("An error occurred.");
+                //sender.sendMessage("An error occurred.");
             }
 
             return false;
