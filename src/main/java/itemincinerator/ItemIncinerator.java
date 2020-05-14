@@ -31,7 +31,7 @@ public final class ItemIncinerator extends JavaPlugin {
         try{
             Player player = (Player) sender;
 
-            if (command.getName().equals("incinerate") && player.hasPermission("command.incinerate")){
+            if (command.getName().equals("incinerate") && player.hasPermission("itemincinerator.use")){
                 double dist = 0;
                 int distInt = 0;
                 AtomicInteger itemCountDestroyed = new AtomicInteger();
@@ -103,7 +103,7 @@ public final class ItemIncinerator extends JavaPlugin {
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         try {
             Player player = (Player) sender;
-            if (command.getName().equals("incinerate") && player.hasPermission("command.incinerate")) {
+            if (command.getName().equals("incinerate") && player.hasPermission("itemincinerator.use")) {
                 Double dist = 0.0;
                 if (args[0] != null && args.length >= 2) {
                     dist = Double.valueOf(args[0]);

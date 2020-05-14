@@ -7,5 +7,5 @@ commands:
     description: Destroy items on the ground [distance] blocks away from you.
     usage: /<command> [distance] [item name]
 permissions:
-  command.incinerate:
+  itemincinerator.use:
     description: Allows players to destroy items on the ground [distance] blocks away from you.
